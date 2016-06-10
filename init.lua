@@ -1,3 +1,5 @@
+--IMPORTANT: make sure to write the node's source mod name in the depends.txt file, as it won't work otherwise
+
 local vanilla_stack_max = 99 --please don't change
 local final_stack_max
 
