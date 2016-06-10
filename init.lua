@@ -1,5 +1,7 @@
 --IMPORTANT: make sure to write the node's source mod name in the depends.txt file, as it won't work otherwise
 
+--USAGE: write the register section of a node after the configuration part.
+
 local vanilla_stack_max = 99 --please don't change
 local final_stack_max
 
@@ -17,4 +19,13 @@ local multiplier = 1
 if multiplier ~= 0 and multiplier ~= nil then
 	final_stack_max = vanilla_stack_max * multiplier
 end
-	
+
+--Example with cobblestone from default	
+minetest.register_node("default:cobble", {
+	description = "Cobblestone",
+	tiles = {"default_cobble.png"},
+	is_ground_content = false,
+	groups = {cracky = 3, stone = 2},
+	stack_max = final_stack_max,
+	sounds = default.node_sound_stone_defaults(),
+})
