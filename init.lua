@@ -21,7 +21,8 @@ if multiplier ~= 0 and multiplier ~= nil then
 end
 
 --Example with cobblestone from default	
-minetest.register_node("default:cobble", {
+--Remember to prefix modname:nodename with a colon (:)
+minetest.register_node(":default:cobble", {
 	description = "Cobblestone",
 	tiles = {"default_cobble.png"},
 	is_ground_content = false,
