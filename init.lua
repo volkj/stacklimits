@@ -4,7 +4,7 @@ local final_stack_max
 --[[ MULTIPLIER AREA
 	Values of multiplier directly modify the number of displayed digits per node.
 	Considering a base value of 99 (vanilla Minetest one) reference values gives:
-		1:			2 digits
+		1:		2 digits
 		2..10:		3 digits
 		11..101:	4 digits
 		102..inf:	what are you doing?
